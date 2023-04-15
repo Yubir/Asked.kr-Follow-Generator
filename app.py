@@ -32,7 +32,7 @@ while True:
     #아이디 입력창
     input_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="__layout"]/div/div[6]/div[2]/div/div[1]/input')))
     input_element.send_keys(random_string)
-    print(random_string)
+    print(random_string+" 의 아이디가 생성중입니다...")
 
     with open("log.txt", "a") as f:
         f.write(random_string + "\n")
@@ -76,6 +76,8 @@ while True:
 
     button_element = WebDriverWait(driver, 50).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="__layout"]/div/div[6]/div[2]/div/div[2]/div[2]/div[2]')))
     button_element.click()
+    
+    print(random_string+" 의 아이디가 생성되었습니다!!")
 
     time.sleep(1)
 
@@ -96,6 +98,8 @@ while True:
     # 비공개 팔로우
     button_element = WebDriverWait(driver, 50).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="__layout"]/div/span[1]/div/div/div[3]/div[2]')))
     button_element.click()
+    
+    print("설정한 아이디로 팔로우를 했습니다!")
 
     time.sleep(5)
 
