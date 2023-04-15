@@ -87,7 +87,7 @@ while True:
 
     # 팔로우 할 계정 아이디 입력
     input_element = WebDriverWait(driver, 50).until(EC.presence_of_element_located((By.XPATH, '//*[@id="__layout"]/div/div[4]/div/div[1]/div/input')))
-    input_element.send_keys("myheartislove") # <<< 팔로우 할 계정 아이디 입력하기
+    input_element.send_keys("HERE") # <<< 팔로우 할 계정 아이디 입력하기
 
     #팔로우 버튼 클릭
     button_element = WebDriverWait(driver, 50).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="__layout"]/div/div[6]/div[3]/div/div[4]/div/div[1]/div/div/div/div/div[3]/div')))
